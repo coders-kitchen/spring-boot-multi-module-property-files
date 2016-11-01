@@ -25,6 +25,8 @@ allprojects {
 }
 apply plugin: 'spring-boot'
 
+sourceCompatibility=1.8
+
 jar {
 	baseName = 'spring-boot-multi-module-property-files'
 	version = '1.0.0'
