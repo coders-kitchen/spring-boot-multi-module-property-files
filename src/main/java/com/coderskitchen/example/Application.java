@@ -1,5 +1,6 @@
 package com.coderskitchen.example;
 
+import com.coderskitchen.example.by_annotation.ByAnnotationExample;
 import com.coderskitchen.example.by_application_listener.ByApplicationListenerExample;
 import com.coderskitchen.example.by_application_listener.PropertyFilePatternRegisteringListener;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,6 +16,8 @@ public class Application {
                                                                            .build()
                                                                            .run(args);
     context.getBean(ByApplicationListenerExample.class)
+           .printValue();
+    context.getBean(ByAnnotationExample.class)
            .printValue();
   }
 }
