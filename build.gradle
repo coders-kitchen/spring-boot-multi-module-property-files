@@ -30,7 +30,15 @@ jar {
 	version = '1.0.0'
 }
 
+configure(subprojects.findAll { println it.name; (it.name != 'api') }) {
+	dependencies {
+		compile project(':api')
+	}
+}
+
+
 dependencies {
+	compile project(':api')
 	compile project(":by-application-listener")
 	compile project(":by-active-profile")
 	compile project(":by-annotation")

@@ -1,4 +1,4 @@
-def modules = ['by-active-profile', 'by-annotation', 'by-application-listener']
+def modules = ['api', 'by-active-profile', 'by-annotation', 'by-application-listener']
 
 modules.each { it ->
 	include it
