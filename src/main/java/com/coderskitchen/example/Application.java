@@ -1,5 +1,6 @@
 package com.coderskitchen.example;
 
+import com.coderskitchen.example.by_active_profile.ActiveProfileExample;
 import com.coderskitchen.example.by_annotation.ByAnnotationExample;
 import com.coderskitchen.example.by_application_listener.ByApplicationListenerExample;
 import com.coderskitchen.example.by_application_listener.PropertyFilePatternRegisteringListener;
@@ -19,5 +20,6 @@ public class Application {
            .printValue();
     context.getBean(ByAnnotationExample.class)
            .printValue();
+    context.getBean(ActiveProfileExample.class).printValue();
   }
 }
