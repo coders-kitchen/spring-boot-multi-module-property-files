@@ -1,0 +1,6 @@
+def modules = ['by-active-profile', 'by-annotation', 'by-application-listener']
+
+modules.each { it ->
+	include it
+	project(":${it}").projectDir = file("modules/${it}")
+}
