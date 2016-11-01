@@ -19,7 +19,8 @@ allprojects {
 	}
 
 	dependencies {
-		compile "org.springframework.boot:spring-boot-starter:1.4.1.RELEASE"
+		compile "org.springframework.boot:spring-boot-starter:1.4.1.RELEASE",
+				'org.projectlombok:lombok:1.16.10'
 	}
 }
 apply plugin: 'spring-boot'
