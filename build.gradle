@@ -42,6 +42,7 @@ configure(subprojects.findAll { println it.name; (it.name != 'api') }) {
 dependencies {
 	compile project(':api')
 	compile project(":by-application-listener")
+	compile project(":by-application-listener-with-spring-factories")
 	compile project(":by-active-profile")
 	compile project(":by-annotation")
 }
